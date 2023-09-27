@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eValidator - Email Validator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/email.svg" alt="email svg">
+                <span>eValidator</span>    
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/about.html" target="_blank">About</a></li>
+                <li><a href="pages/contact.html" target="_blank">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Enter your email to validate</h1>
+            <form action="/submit" method="post">
+                <label for="email">Email:</label>
+                <input placeholder="Enter your email to validate" type="email" id="email" name="email" required>
+                <br><br>
+                <input id="submitBtn" class="btn" type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="container">
+            <h2>Your Results</h2>
+            <div id="resultCont">
+                Your results will be shown here
+            </div>
+            <div id="detailsDiv"></div>
+        </div>
+    </main>
+    <footer>
+        Copyright | <a href="https://github.com/JatinKevlani/eValidator.git" target="_blank">&nbsp;eValidator.com&nbsp;</a> | All rights reserved
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
