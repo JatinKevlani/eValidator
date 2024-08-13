@@ -58,7 +58,7 @@ submitBtn.addEventListener("click", async (e) => {
             }
         }
     }
-    console.log(details);
+    // console.log(details);
     resultCont.innerHTML = checkValid + `<input id="detailsBtn" type="submit" class="btn" value="Show details">`;
     detailsBtn.addEventListener("click", () => {
         detailsDiv.innerHTML = details;
